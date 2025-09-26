@@ -1,0 +1,195 @@
+# ===========================================
+# SENSITIVE DATA - NEVER COMMIT THESE!
+# ===========================================
+data
+dist
+frontent
+
+scripts
+/src
+types
+wallets
+
+
+.env
+.env.*
+!.env.example
+ENV_TEMPLATE.md
+
+# Wallet files (contain encrypted private keys)
+wallets/
+*.wallet
+*.key
+*.keypair
+
+# Database files
+data/
+*.sqlite
+*.sqlite3
+*.db
+
+# Private keys and secrets
+private-keys/
+secrets/
+*.pem
+*.p12
+*.pfx
+
+# ===========================================
+# NODE.JS DEPENDENCIES
+# ===========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ===========================================
+# BUILD OUTPUTS
+# ===========================================
+dist/
+build/
+out/
+.next/
+.nuxt/
+.vuepress/dist/
+
+# Frontend build files
+frontend/dist/
+frontend/build/
+frontend/.next/
+frontend/out/
+
+# TypeScript build files
+*.tsbuildinfo
+.tscache/
+
+# ===========================================
+# DEVELOPMENT FILES
+# ===========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Debug files
+*.log
+logs/
+debug.log
+error.log
+
+# Coverage and testing
+coverage/
+.nyc_output/
+.coverage/
+*.lcov
+
+# ===========================================
+# DOCKER & DEPLOYMENT
+# ===========================================
+# Keep Dockerfile and docker-compose.yml for buyers
+# But exclude runtime data
+.docker/
+docker-data/
+volumes/
+
+# ===========================================
+# TEMPORARY FILES
+# ===========================================
+tmp/
+temp/
+.tmp/
+.cache/
+.parcel-cache/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ===========================================
+# RUNTIME DATA
+# ===========================================
+# Process IDs
+*.pid
+*.seed
+*.pid.lock
+
+# Runtime data
+pids/
+logs/
+results/
+
+# ===========================================
+# EDITOR FILES
+# ===========================================
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# ===========================================
+# DOCUMENTATION DRAFTS (keep main docs)
+# ===========================================
+NOTES.md
+TODO.md
+PRIVATE_NOTES.md
+DEVELOPMENT_NOTES.md
+
+# ===========================================
+# TEST DATA & EXAMPLES
+# ===========================================
+test-data/
+examples/private/
+demo-wallets/
+
+# ===========================================
+# BACKUP FILES
+# ===========================================
+*.backup
+*.bak
+*.old
+backup/
+backups/
+
+# ===========================================
+# WHAT TO KEEP FOR BUYERS
+# ===========================================
+# ✅ Source code (src/, frontend/src/)
+# ✅ Package.json files
+# ✅ Dockerfile and docker-compose.yml
+# ✅ README.md and documentation
+# ✅ TypeScript configs
+# ✅ Scripts folder
+# ✅ ENV_TEMPLATE.md (example only)
+# ❌ .env (actual secrets)
+# ❌ wallets/ (private keys)
+# ❌ data/ (database)
+# ❌ node_modules/ 
